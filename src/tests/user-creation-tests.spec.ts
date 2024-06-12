@@ -31,7 +31,7 @@ test.describe('User creation', () => {
     await createANewUserPage.passInput.fill(userData.validUserData.password);
     await createANewUserPage.createANewUser();
 
-    // this test will fail, bc it's impossible to use inputError selector, but in case it should look like the row below
+    // this test will fail with assertion, bc it's impossible to use inputError selector, but in case it should look like the row below
     // await expect (createANewUserPage.lastNameError).toHaveText('Please fill out this field.')
   });
 })
